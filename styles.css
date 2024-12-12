@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+:root{
+    --primary-color: #6834a6;
+    --secondary-color: #fff;
+    --last-color: #000;
+}
+
+header{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url('./assets/img/header_bg.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.header__nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 1s ease;
+    transform: translateY(-150%);
+    animation: moveY 1s ease 1s forwards;
+}
+
+.nav__logo img{
+    width: 150px;
+    transition: all 1s ease;
+    transform: translateX(-150%);
+    animation: moveX 1s ease 1s forwards;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.header__account{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.header__account h1{
+    text-align: justify;
+    font-size: 2.5em;
+}
+
+.header__account a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 24%;
+    text-align: center;
+}
+
+.account__info{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+    width: 45%;
+    transition: all 1s ease;
+    transform: translateX(-150%);
+    animation: moveX 1s ease 1s forwards;
+}
+
+.account__img{
+    width: 45%;
+    transition: all 1s ease;
+    transform: translateY(-150%);
+    animation: moveY 1s ease 1s forwards;
+}
+
+.account__img img{
+    width: 100%;
+    height: 700px;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+.container > h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nucleus{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 50px;
+}
+
+.nucleus__flip-card{
+    grid-column: 1/1;
+    grid-row: 1/-1;
+}
+
+.nucleus__info{
+    grid-column: 2/-1;
+    grid-row: 2/4;
+}
+
+.nucleus__flip-card img{
+    width: 250px;
+}
+
+.info__text{
+    background-color: var(--secondary-color);
+    padding: 25px;
+    box-shadow: 0 0 5px var(--last-color);
+}
+
+.info__text h1{
+    color: var(--primary-color);
+    font-size: 1.75em;
+}
+
+.seguridad{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.seguridad__img img{
+    width: 500px;
+    transition: transform 1s ease;
+}
+
+.seguridad__img img:hover{
+    transform: scale(0.75);
+}
+
+.info__text--other{
+    background-color: var(--secondary-color);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.container h2{
+    text-align: center;
+}
+
+#galeria{
+    color: var(--primary-color);
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.galeria__img{
+    width: 250px;
+    height: 250px;
+}
+
+.img1{
+    background-image: url('./assets/img/imagen1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-template-rows: 1/2;
+}
+
+.img2{
+    background-image: url('./assets/img/imagen2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-template-rows: 1/1;
+}
+
+.img3{
+    background-image: url('./assets/img/imagen3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: -1/-1;
+    grid-template-rows: 1/1;
+}
+
+.img4{
+    background-image: url('./assets/img/imagen4.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-template-rows: 1/2;
+}
+
+.img5{
+    background-image: url('./assets/img/imagen5.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/2;
+    grid-template-rows: 1/2;
+}
+
+.img6{
+    background-image: url('./assets/img/imagen6.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/4;
+    grid-template-rows: 1/1;
+}
+
+.img7{
+    background-image: url('./assets/img/imagen7.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-template-rows: 1/2;
+}
+
+/* .img1{
+    background-image: url('./assets/img/imagen1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-template-rows: 1/2;
+}
+
+.img1{
+    background-image: url('./assets/img/imagen1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/1;
+    grid-template-rows: 1/2;
+} */
+
+.formulario{
+    background-color: var(--primary-color);
+    padding: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-container{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 25px;
+    gap: 25px;
+    justify-content: center;
+}
+
+.form-container select{
+    width: 20%;
+    transition: box-shadow 0.5s ease;
+}
+
+.form-container input{
+    width: 20%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.5s ease;
+}
+
+.form-container input:hover, .form-container select:hover{
+    box-shadow: 0 0 10px var(--last-color);
+}
+
+.form-container input:last-of-type:hover{
+    box-shadow: none;
+}
+
+#submit{
+    background-color: var(--last-color);
+    color: var(--secondary-color);
+    transition: background-color 0.5s ease;
+}
+
+.info__text, .info__text--other{
+    transition: transform 1s ease;
+}
+
+.info__text:hover, .info__text--other:hover{
+    background-color: var(--last-color);
+    box-shadow: 0 0 10px orangered;
+    transform: scale(1.1);
+}
+
+.info__text:hover p, .info__text--other:hover p{
+    color: var(--secondary-color);
+    
+}
+
+#submit:hover{
+    background-color: transparent;
+}
+
+
+
+@keyframes moveX {
+    from{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 25%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    75%{
+        opacity: 75%;
+    }
+
+    to{
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveY {
+    from{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 25%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    75%{
+        opacity: 75%;
+    }
+
+    to{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+
+}
